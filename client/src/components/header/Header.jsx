@@ -64,41 +64,40 @@ const Header = ({ type }) => {
         <div className="headerList">
           <div className="headerListItem active">
             <FontAwesomeIcon icon={faBed} />
-            <span>Stays</span>
+            <span>Estadías</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faPlane} />
-            <span>Flights</span>
+            <span>Vuelos</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faCar} />
-            <span>Car rentals</span>
+            <span>Rentas de Autos</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faBed} />
-            <span>Attractions</span>
+            <span>Atracciones</span>
           </div>
           <div className="headerListItem">
             <FontAwesomeIcon icon={faTaxi} />
-            <span>Airport taxis</span>
+            <span>Taxis</span>
           </div>
         </div>
         {type !== "list" && (
           <>
             <h1 className="headerTitle">
-              A lifetime of discounts? It's Genius.
+             Queres Viajar? Este es tu lugar.
             </h1>
             <p className="headerDesc">
-              Get rewarded for your travels – unlock instant savings of 10% or
-              more with a free Lamabooking account
+              Viaja Rapido. Viaja Seguro.
             </p>
-            {!user && <button className="headerBtn">Sign in / Register</button>}
+            {!user && <button className="headerBtn">Iniciar Sesión / Registrarse</button>}
             <div className="headerSearch">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />
                 <input
                   type="text"
-                  placeholder="Where are you going?"
+                  placeholder="A Donde Vas?"
                   className="headerSearchInput"
                   onChange={(e) => setDestination(e.target.value)}
                 />
@@ -108,7 +107,7 @@ const Header = ({ type }) => {
                 <span
                   onClick={() => setOpenDate(!openDate)}
                   className="headerSearchText"
-                >{`${format(dates[0].startDate, "MM/dd/yyyy")} to ${format(
+                >{`${format(dates[0].startDate, "MM/dd/yyyy")} hasta ${format(
                   dates[0].endDate,
                   "MM/dd/yyyy"
                 )}`}</span>
@@ -128,11 +127,11 @@ const Header = ({ type }) => {
                 <span
                   onClick={() => setOpenOptions(!openOptions)}
                   className="headerSearchText"
-                >{`${options.adult} adult · ${options.children} children · ${options.room} room`}</span>
+                >{`${options.adult} adulto · ${options.children} niño · ${options.room} habitacion`}</span>
                 {openOptions && (
                   <div className="options">
                     <div className="optionItem">
-                      <span className="optionText">Adult</span>
+                      <span className="optionText">Adulto</span>
                       <div className="optionCounter">
                         <button
                           disabled={options.adult <= 1}
@@ -153,7 +152,7 @@ const Header = ({ type }) => {
                       </div>
                     </div>
                     <div className="optionItem">
-                      <span className="optionText">Children</span>
+                      <span className="optionText">Niño</span>
                       <div className="optionCounter">
                         <button
                           disabled={options.children <= 0}
@@ -174,7 +173,7 @@ const Header = ({ type }) => {
                       </div>
                     </div>
                     <div className="optionItem">
-                      <span className="optionText">Room</span>
+                      <span className="optionText">Habitacion</span>
                       <div className="optionCounter">
                         <button
                           disabled={options.room <= 1}
@@ -199,7 +198,7 @@ const Header = ({ type }) => {
               </div>
               <div className="headerSearchItem">
                 <button className="headerBtn" onClick={handleSearch}>
-                  Search
+                  Buscar
                 </button>
               </div>
             </div>

@@ -21,53 +21,53 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo">lamadmin</span>
+          <span className="logo">L0FAdmin</span>
         </Link>
       </div>
       <hr />
       <div className="center">
         <ul>
-          <p className="title">MAIN</p>
+          <p className="title">PAGINA PRINCIPAL</p>
           <li>
             <DashboardIcon className="icon" />
             <span>Dashboard</span>
           </li>
-          <p className="title">LISTS</p>
+          <p className="title">LISTAS</p>
           <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
               <PersonOutlineIcon className="icon" />
-              <span>Users</span>
+              <span>Usuarios</span>
             </li>
           </Link>
           <Link to="/hotels" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
-              <span>Hotels</span>
+              <span>Hoteles</span>
             </li>
           </Link>
           <Link to="/rooms" style={{ textDecoration: "none" }}>
             <li>
               <CreditCardIcon className="icon" />
-              <span>Rooms</span>
+              <span>Habitaciones</span>
             </li>
           </Link>
           <li>
             <LocalShippingIcon className="icon" />
             <span>Delivery</span>
           </li>
-          <p className="title">USEFUL</p>
+          <p className="title">UTILIDADES</p>
           <li>
             <InsertChartIcon className="icon" />
-            <span>Stats</span>
+            <span>Estadisticas</span>
           </li>
           <li>
             <NotificationsNoneIcon className="icon" />
-            <span>Notifications</span>
+            <span>Notificaciones</span>
           </li>
-          <p className="title">SERVICE</p>
+          <p className="title">SERVICIOS</p>
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>System Health</span>
+            <span>Sistema de Salud</span>
           </li>
           <li>
             <PsychologyOutlinedIcon className="icon" />
@@ -75,12 +75,12 @@ const Sidebar = () => {
           </li>
           <li>
             <SettingsApplicationsIcon className="icon" />
-            <span>Settings</span>
+            <span>Opciones</span>
           </li>
-          <p className="title">USER</p>
+          <p className="title">USUARIO</p>
           <li>
             <AccountCircleOutlinedIcon className="icon" />
-            <span>Profile</span>
+            <span>Perfil</span>
           </li>
           <li>
             <ExitToAppIcon className="icon" />

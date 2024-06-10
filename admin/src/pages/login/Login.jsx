@@ -44,20 +44,20 @@ const Login = () => {
       <div className="lContainer">
         <input
           type="text"
-          placeholder="username"
+          placeholder="usuario"
           id="username"
           onChange={handleChange}
           className="lInput"
         />
         <input
           type="password"
-          placeholder="password"
+          placeholder="contraseña"
           id="password"
           onChange={handleChange}
           className="lInput"
         />
         <button disabled={loading} onClick={handleClick} className="lButton">
-          Login
+          Iniciar Sesion
         </button>
         {error && <span>{error.message}</span>}
       </div>
